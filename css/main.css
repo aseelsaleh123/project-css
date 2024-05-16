@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --mainfont:"Poppins", sans-serif;
+    --subfont:"Inter", sans-serif;
+    --mainColor:#545BE8;
+}
+body{
+    font-family: var(--mainfont);
+    height: 5000px;
+}
+.contener{
+    width: calc(100% - 120px);
+  
+    margin: auto;
+
+}
+.header .logo {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.header .logo img{
+    width:  35px ;
+
+}
+.header .nav a{
+    color:#101928
+}
+.header .logo a{
+    color:(--mainColor) ;
+
+}
+.header{
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 4px 4px  rgba(14, 12, 12, 0.1);
+    padding:20px 0 ;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+a{
+    text-decoration: none;
+
+}
+ul{
+    list-style: none;
+    align-items: center;
+}
+.nav ul{
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+
+}
+.active{
+    font-weight: 900;
+}
+.header .auth a{
+    font-family: (--subfont);
+}
+.header .auth a:first-of-type{
+    border: 1px solid var(--mainColor);
+    padding: 10px 30px;
+    color:var(--mainColor) ;
+}
+.header .auth a:last-of-type{
+    background-color: var(--mainColor);
+    padding: 10px 30px;
+    color: white;
+}
+@media (max-width:992px){
+    .nav{
+    display: none;
+    }
+}
